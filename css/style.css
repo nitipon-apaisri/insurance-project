@@ -1,0 +1,196 @@
+body header .hero .content-left-side, body main .sec-1 .content-left-side {
+  text-align: left;
+}
+
+body header .hero .content-left-side .left-side-info, body main .sec-1 .content-left-side .left-side-info {
+  width: 70%;
+  margin: 50px auto 0 auto;
+}
+
+body header .hero .content-left-side .left-side-info h1, body main .sec-1 .content-left-side .left-side-info h1 {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 100%;
+}
+
+body header .hero, body main .sec-1 {
+  max-height: 544px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+body header .hero .content-left-side p, body main .sec-1 .content-right-side {
+  margin: 0;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+body header .hero .content-left-side {
+  background-color: #c7ddea;
+}
+
+body header .hero .content-left-side h1 {
+  margin: 20px 0 20px 0;
+}
+
+body header .hero .content-left-side img {
+  width: 286px;
+  height: 279px;
+  float: right;
+  clear: right;
+}
+
+body header .hero .content-right-side .learn-more, body header .hero .content-right-side .join-now {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .hero .content-right-side .learn-more p, body header .hero .content-right-side .join-now p {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+body header .hero .content-right-side .learn-more h4, body header .hero .content-right-side .join-now h4 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 41px;
+  margin: 0;
+  color: #fff;
+}
+
+body header .hero .content-right-side {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+body header .hero .content-right-side .learn-more {
+  background-color: #f17949;
+}
+
+body header .hero .content-right-side .join-now {
+  background-color: #fab131;
+}
+
+body header ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header ul li {
+  list-style: none;
+}
+
+body header ul li a {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  text-decoration: none;
+}
+
+body main .sec-1 {
+  height: 612px;
+  background-color: #a9a19e;
+  padding: 50px;
+}
+
+body main .sec-1 .content-left-side .left-side-info {
+  margin-top: 20px;
+  color: #fff;
+}
+
+body main .sec-1 .content-left-side .left-side-info h1 {
+  margin: 20px 0 20px 0;
+}
+
+body main .sec-1 .content-left-side .left-side-info a {
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+body main .sec-1 .content-right-side {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main .sec-2 .profiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main .sec-2 .profiles .card {
+  width: 256px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+body main .sec-2 .profiles .card .profile-img {
+  width: 236px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -30px;
+}
+
+body main .sec-2 .profiles .profile-1 .profile-img-bc .profile-img-1 {
+  background-image: url(../assets/img/child.png);
+  background-size: 100px 170px;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+/*# sourceMappingURL=style.css.map */
