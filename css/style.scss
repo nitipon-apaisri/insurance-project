@@ -22,7 +22,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.4);
 }
 body {
   max-width: 1000px;
@@ -133,27 +133,83 @@ body {
       }
     }
     .sec-2 {
-      .profiles {
-        display: flex;
-        flex-direction: row;
-        .card {
-          width: 256px;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-          .profile-img {
-            width: 236px;
-            height: 150px;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: -30px;
+      background-color: #FAB131;
+      padding: 50px;
+      .cover-profile {  
+        .profiles {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          .card {
+            margin-top: -200px;
+            background-color: #fff;
+            max-width: 240px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            h5 {
+              color: rgba(0, 0, 0, 0.9);
+              margin-top: 15px;
+              margin-bottom: 10px;
+            }
+            .profile-info {
+              width: 90%;
+              margin-left: auto;
+              margin-right: auto;
+              p {
+                font-size: 11px;
+                font-weight: bold;
+                font-style: normal;
+                color: rgba(0, 0, 0, 0.4);
+              }
+            }
+            .profile-img-bc {
+              height: 170px;
+              border-radius: 5px;
+              position: relative;
+              margin-top: -50px;
+              .profile-img {
+                width: 236px;
+                height: 150px;
+                position: absolute;
+                left: 0px;
+                bottom: 0;
+                border-radius: 5px;
+              }
+            }
           }
-        }
-        .profile-1 {
-          .profile-img-bc {
-            .profile-img-1 {
-              background-image: url(../assets/img/child.png);
-              background-size: 100px 170px;
-              background-repeat: no-repeat;
-              background-position: center top;
+          .profile-1 {
+            .profile-img-bc {
+              background-color: #c7ddea;
+              .profile-img-1 {
+                background-image: url(../assets/img/child.png);
+                background-size: 100px 170px;
+                background-repeat: no-repeat;
+                background-position: center top;
+              }
+            }
+          }
+          .profile-2 {
+            .profile-img-bc {
+              background-color:#FAB131;
+              .profile-img-2 {
+                background-image: url(../assets/img/adult.png);
+                background-size: 82px 470px;
+                background-repeat: no-repeat;
+                background-position: center top;
+              }
+            }
+          }
+          .profile-3 {
+            .profile-img-bc {
+              background-color: #F17949;
+              .profile-img-3 {
+                background-image: url(../assets/img/old.png);
+                background-size: 132px 420px;
+                background-repeat: no-repeat;
+                background-position: center top;
+              }
             }
           }
         }

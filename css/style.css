@@ -28,7 +28,7 @@ body header .hero .content-left-side p, body main .sec-1 .content-right-side {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 body {
@@ -163,7 +163,12 @@ body main .sec-1 .content-right-side {
   margin-right: auto;
 }
 
-body main .sec-2 .profiles {
+body main .sec-2 {
+  background-color: #FAB131;
+  padding: 50px;
+}
+
+body main .sec-2 .cover-profile .profiles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,25 +176,85 @@ body main .sec-2 .profiles {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-body main .sec-2 .profiles .card {
-  width: 256px;
+body main .sec-2 .cover-profile .profiles .card {
+  margin-top: -200px;
+  background-color: #fff;
+  max-width: 240px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-body main .sec-2 .profiles .card .profile-img {
-  width: 236px;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: -30px;
+body main .sec-2 .cover-profile .profiles .card h5 {
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
-body main .sec-2 .profiles .profile-1 .profile-img-bc .profile-img-1 {
+body main .sec-2 .cover-profile .profiles .card .profile-info {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main .sec-2 .cover-profile .profiles .card .profile-info p {
+  font-size: 11px;
+  font-weight: bold;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+body main .sec-2 .cover-profile .profiles .card .profile-img-bc {
+  height: 170px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: -50px;
+}
+
+body main .sec-2 .cover-profile .profiles .card .profile-img-bc .profile-img {
+  width: 236px;
+  height: 150px;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+body main .sec-2 .cover-profile .profiles .profile-1 .profile-img-bc {
+  background-color: #c7ddea;
+}
+
+body main .sec-2 .cover-profile .profiles .profile-1 .profile-img-bc .profile-img-1 {
   background-image: url(../assets/img/child.png);
   background-size: 100px 170px;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+body main .sec-2 .cover-profile .profiles .profile-2 .profile-img-bc {
+  background-color: #FAB131;
+}
+
+body main .sec-2 .cover-profile .profiles .profile-2 .profile-img-bc .profile-img-2 {
+  background-image: url(../assets/img/adult.png);
+  background-size: 82px 470px;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+body main .sec-2 .cover-profile .profiles .profile-3 .profile-img-bc {
+  background-color: #F17949;
+}
+
+body main .sec-2 .cover-profile .profiles .profile-3 .profile-img-bc .profile-img-3 {
+  background-image: url(../assets/img/old.png);
+  background-size: 132px 420px;
   background-repeat: no-repeat;
   background-position: center top;
 }
