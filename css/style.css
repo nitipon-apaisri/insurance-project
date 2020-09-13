@@ -21,7 +21,7 @@ body header .hero, body main .sec-1 {
       grid-template-columns: repeat(2, 1fr);
 }
 
-body header .hero .content-left-side p, body main .sec-1 .content-right-side {
+body header .hero .content-left-side p, body main .sec-1 .content-right-side, body main .sec-2 .cover-about-us .about-us p {
   margin: 0;
   font-family: Fira Sans;
   font-style: normal;
@@ -164,7 +164,7 @@ body main .sec-1 .content-right-side {
 }
 
 body main .sec-2 {
-  background-color: #FAB131;
+  background-color: #fab131;
   padding: 50px;
 }
 
@@ -238,7 +238,7 @@ body main .sec-2 .cover-profile .profiles .profile-1 .profile-img-bc .profile-im
 }
 
 body main .sec-2 .cover-profile .profiles .profile-2 .profile-img-bc {
-  background-color: #FAB131;
+  background-color: #fab131;
 }
 
 body main .sec-2 .cover-profile .profiles .profile-2 .profile-img-bc .profile-img-2 {
@@ -249,7 +249,7 @@ body main .sec-2 .cover-profile .profiles .profile-2 .profile-img-bc .profile-im
 }
 
 body main .sec-2 .cover-profile .profiles .profile-3 .profile-img-bc {
-  background-color: #F17949;
+  background-color: #f17949;
 }
 
 body main .sec-2 .cover-profile .profiles .profile-3 .profile-img-bc .profile-img-3 {
@@ -257,5 +257,28 @@ body main .sec-2 .cover-profile .profiles .profile-3 .profile-img-bc .profile-im
   background-size: 132px 420px;
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+body main .sec-2 .cover-about-us .about-us {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+body main .sec-2 .cover-about-us .about-us h1 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+}
+
+body main .sec-3 .cover-how-it-works .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: (300px)[2];
+      grid-template-rows: repeat(2, 300px);
 }
 /*# sourceMappingURL=style.css.map */

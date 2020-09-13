@@ -133,9 +133,9 @@ body {
       }
     }
     .sec-2 {
-      background-color: #FAB131;
+      background-color: #fab131;
       padding: 50px;
-      .cover-profile {  
+      .cover-profile {
         .profiles {
           display: flex;
           flex-direction: row;
@@ -192,7 +192,7 @@ body {
           }
           .profile-2 {
             .profile-img-bc {
-              background-color:#FAB131;
+              background-color: #fab131;
               .profile-img-2 {
                 background-image: url(../assets/img/adult.png);
                 background-size: 82px 470px;
@@ -203,7 +203,7 @@ body {
           }
           .profile-3 {
             .profile-img-bc {
-              background-color: #F17949;
+              background-color: #f17949;
               .profile-img-3 {
                 background-image: url(../assets/img/old.png);
                 background-size: 132px 420px;
@@ -212,6 +212,32 @@ body {
               }
             }
           }
+        }
+      }
+      .cover-about-us {
+        .about-us {
+          width: 55%;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          h1 {
+            color: #fff;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 45px;
+          }
+          p {
+            @extend %main-text-prop;
+          }
+        }
+      }
+    }
+    .sec-3 {
+      .cover-how-it-works {
+        .row {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-template-rows: repeat(2, 300px);
         }
       }
     }
