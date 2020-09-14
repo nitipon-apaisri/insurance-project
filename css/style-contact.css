@@ -1,0 +1,144 @@
+body {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+body header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 30px 0 30px;
+  background-color: #c7ddea;
+}
+
+body header .header-content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .header-content .title h1 {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+}
+
+body header .header-content .img img {
+  width: 286px;
+  height: 279px;
+}
+
+body header nav ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header nav ul li {
+  list-style: none;
+}
+
+body header nav ul li a {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  text-decoration: none;
+}
+
+body main .sec-1 {
+  background-color: #a9a19e;
+}
+
+body main .sec-1 .contact {
+  padding: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+body main .sec-1 .contact .info h1 {
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+body main .sec-1 .contact .contact-input form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .sec-1 .contact .contact-input form label {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+body main .sec-1 .contact .contact-input form .input-email, body main .sec-1 .contact .contact-input form .input-message {
+  border-radius: 2px;
+  border: 1px solid #fff;
+  margin-bottom: 30px;
+}
+
+body main .sec-1 .contact .contact-input form .input-email {
+  height: 25px;
+}
+
+body main .sec-1 .contact .contact-input form .input-message {
+  height: 90px;
+  padding: 10px;
+}
+
+body main .sec-2 article {
+  background-image: url(../assets/img/shinjuku.png);
+  background-position: center;
+  height: 390px;
+  position: relative;
+}
+
+body main .sec-2 article .map-info {
+  position: absolute;
+  padding: 20px;
+  background-color: #fab131;
+  margin: 50px;
+}
+
+body main .sec-2 article .map-info h1 {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style-contact.css.map */

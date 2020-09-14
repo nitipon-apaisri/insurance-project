@@ -1,0 +1,118 @@
+body {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0;
+  font-family: "Frank Ruhl Libre", serif;
+  header {
+    .header-content {
+      display: flex;
+      padding: 30px 30px 0 30px;
+      background-color: #c7ddea;
+      .title {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          font-weight: 900;
+          font-size: 45px;
+          line-height: 100%;
+          letter-spacing: -0.02em;
+        }
+      }
+      .img {
+        img {
+          width: 286px;
+          height: 279px;
+        }
+      }
+    }
+    nav {
+      ul {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        li {
+          list-style: none;
+          a {
+            font-family: Fira Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 100%;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  main {
+    .sec-1 {
+      background-color: #a9a19e;
+      .contact {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: auto auto;
+        .info {
+          h1 {
+            font-size: 45px;
+            line-height: 100%;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+          }
+        }
+        .contact-input {
+          form {
+            display: flex;
+            flex-direction: column;
+            label {
+              font-family: Fira Sans;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 100%;
+              color: #fff;
+              margin-bottom: 10px;
+            }
+            %input-prop {
+              border-radius: 2px;
+              border: 1px solid #fff;
+              margin-bottom: 30px;
+            }
+            .input-email {
+              @extend %input-prop;
+              height: 25px;
+            }
+            .input-message {
+              @extend %input-prop;
+              height: 90px;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+    .sec-2 {
+      article {
+        background-image: url(../assets/img/shinjuku.png);
+        background-position: center;
+        height: 390px;
+        position: relative;
+        .map-info {
+          position: absolute;
+          padding: 20px;
+          background-color: #fab131;
+          margin: 50px;
+          h1 {
+            font-weight: 900;
+            font-size: 45px;
+            line-height: 100%;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
