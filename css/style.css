@@ -21,7 +21,7 @@ body header .hero, body main .sec-1 {
       grid-template-columns: repeat(2, 1fr);
 }
 
-body header .hero .content-left-side p, body main .sec-1 .content-right-side, body main .sec-2 .cover-about-us .about-us p {
+body header .hero .content-left-side p, body main .sec-1 .content-right-side, body main .sec-2 .cover-about-us .about-us p, body main .sec-3 .cover-how-it-works .row .box p, body main .sec-3 .take-to-the-top a {
   margin: 0;
   font-family: Fira Sans;
   font-style: normal;
@@ -276,9 +276,72 @@ body main .sec-2 .cover-about-us .about-us h1 {
 body main .sec-3 .cover-how-it-works .row {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
+  -ms-grid-columns: 333px 333px 333px;
+      grid-template-columns: 333px 333px 333px;
   -ms-grid-rows: (300px)[2];
       grid-template-rows: repeat(2, 300px);
+}
+
+body main .sec-3 .cover-how-it-works .row .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .sec-3 .cover-how-it-works .row .box p {
+  text-align: center;
+}
+
+body main .sec-3 .cover-how-it-works .row .box h3 {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+body main .sec-3 .cover-how-it-works .row .box-1 {
+  background-color: #C7DDEA;
+}
+
+body main .sec-3 .cover-how-it-works .row .box-1 h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 100%;
+}
+
+body main .sec-3 .cover-how-it-works .row .box-3 {
+  background-color: #EBEBEB;
+}
+
+body main .sec-3 .cover-how-it-works .row .box-5 {
+  background-color: #F17949;
+}
+
+body main .sec-3 .take-to-the-top {
+  padding: 30px;
+  background-color: #A9A19E;
+  text-align: center;
+}
+
+body main .sec-3 .take-to-the-top a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body footer {
+  height: 340px;
+  background-color: #777574;
 }
 /*# sourceMappingURL=style.css.map */

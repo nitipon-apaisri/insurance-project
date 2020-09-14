@@ -236,10 +236,57 @@ body {
       .cover-how-it-works {
         .row {
           display: grid;
-          grid-template-columns: auto auto auto;
+          grid-template-columns: 333px 333px 333px;
           grid-template-rows: repeat(2, 300px);
+          .box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+              text-align: center;
+              @extend %main-text-prop;
+            }
+            h3{
+              align-self: start;
+              position: absolute;
+              left: 0;
+              margin-left: 20px;
+              font-size: 35px;
+              color: rgba(0, 0, 0, 0.4);
+            }
+          }
+          .box-1 {
+            background-color: #C7DDEA;
+            h2 {
+              text-align: center;
+              font-weight: 900;
+              font-size: 45px;
+              line-height: 100%;
+            }
+          }
+          .box-3 {
+            background-color: #EBEBEB;
+          }
+          .box-5 {
+            background-color: #F17949;
+          }
+        }
+      }
+      .take-to-the-top {
+        padding: 30px;
+        background-color: #A9A19E;
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.7);
+          @extend %main-text-prop;
         }
       }
     }
+  }
+  footer {
+    height: 340px;
+    background-color: #777574;
   }
 }
