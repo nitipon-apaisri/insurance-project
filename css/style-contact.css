@@ -141,4 +141,9 @@ body main .sec-2 article .map-info h1 {
   letter-spacing: -0.02em;
   color: #ffffff;
 }
+
+body footer {
+  background-color: #777574;
+  height: 250px;
+}
 /*# sourceMappingURL=style-contact.css.map */
