@@ -1,0 +1,103 @@
+@media only screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
+  body header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body header .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body header .hero .content-left-side {
+    padding: 10px 10px 0 10px;
+  }
+  body header .hero .content-left-side .left-side-info {
+    width: 100%;
+  }
+  body header .hero .content-left-side .left-side-info h1 {
+    font-size: 3em;
+  }
+  body header .hero .content-left-side .left-side-info p {
+    margin: 20px 0 30px 0;
+  }
+  body header .hero .content-left-side img {
+    width: 365px;
+  }
+  body header .hero .content-right-side {
+    height: 630px;
+  }
+  body main .sec-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body main .sec-1 .row-1 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body main .sec-1 .row-1 .content-left-side .left-side-info {
+    width: 100%;
+    margin: 0;
+  }
+  body main .sec-1 .row-1 .content-left-side .left-side-info h1 {
+    font-size: 45px;
+  }
+  body main .sec-1 .row-1 .content-right-side {
+    width: 100%;
+  }
+  body main .sec-1 .row-2 {
+    margin-top: 0;
+  }
+  body main .sec-1 .row-2 .cover-profile .profiles {
+    height: 1050px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .sec-2 {
+    padding: 20px 25px;
+  }
+  body main .sec-2 .cover-about-us {
+    margin-top: 0;
+  }
+  body main .sec-2 .cover-about-us .about-us {
+    width: 100%;
+  }
+  body main .sec-3 .cover-how-it-works .row {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (170px)[6];
+        grid-template-rows: repeat(6, 170px);
+  }
+  body main .sec-3 .cover-how-it-works .row .box h3 {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

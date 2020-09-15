@@ -1,34 +1,68 @@
-body header .hero .content-left-side, body main .sec-1 .content-left-side {
-  text-align: left;
-}
-
-body header .hero .content-left-side .left-side-info, body main .sec-1 .content-left-side .left-side-info {
-  width: 70%;
-  margin: 50px auto 0 auto;
-}
-
-body header .hero .content-left-side .left-side-info h1, body main .sec-1 .content-left-side .left-side-info h1 {
-  font-weight: 900;
-  font-size: 45px;
-  line-height: 100%;
-}
-
-body header .hero, body main .sec-1 {
-  max-height: 544px;
+body header .hero, main .sec-1 .row-1 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
 
-body header .hero .content-left-side p, body main .sec-1 .content-right-side, body main .sec-2 .cover-about-us .about-us p, body main .sec-3 .cover-how-it-works .row .box p, body main .sec-3 .take-to-the-top a {
+body header .hero .content-left-side p, main .sec-1 .row-1 .content-right-side, main .sec-2 .cover-about-us .about-us p, main .sec-3 .cover-how-it-works .row .box p, main .sec-3 .take-to-the-top a {
   margin: 0;
   font-family: Fira Sans;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.4);
+}
+
+body header .content-right-side .learn-more, body header .content-right-side .join-now {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .content-right-side .learn-more p, body header .content-right-side .join-now p {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+body header .content-right-side .learn-more h4, body header .content-right-side .join-now h4 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 41px;
+  margin: 0;
+  color: #fff;
+}
+
+body header .hero .content-left-side, main .sec-1 .row-1 .content-left-side {
+  text-align: left;
+}
+
+body header .hero .content-left-side .left-side-info, main .sec-1 .row-1 .content-left-side .left-side-info {
+  width: 70%;
+  margin: 50px auto 0 auto;
+}
+
+body header .hero .content-left-side .left-side-info h1, main .sec-1 .row-1 .content-left-side .left-side-info h1 {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 100%;
 }
 
 body {
@@ -53,34 +87,7 @@ body header .hero .content-left-side img {
   clear: right;
 }
 
-body header .hero .content-right-side .learn-more, body header .hero .content-right-side .join-now {
-  height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body header .hero .content-right-side .learn-more p, body header .hero .content-right-side .join-now p {
-  font-family: Fira Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 13px;
-  margin: 0;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-body header .hero .content-right-side .learn-more h4, body header .hero .content-right-side .join-now h4 {
+body header .hero h4 {
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -89,8 +96,7 @@ body header .hero .content-right-side .learn-more h4, body header .hero .content
   color: #fff;
 }
 
-body header .hero .content-right-side {
-  height: 100%;
+body header .content-right-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,15 +109,15 @@ body header .hero .content-right-side {
           align-items: stretch;
 }
 
-body header .hero .content-right-side .learn-more {
+body header .content-right-side .learn-more {
   background-color: #f17949;
 }
 
-body header .hero .content-right-side .join-now {
+body header .content-right-side .join-now {
   background-color: #fab131;
 }
 
-body header ul {
+body ul {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,11 +130,11 @@ body header ul {
       justify-content: space-around;
 }
 
-body header ul li {
+body ul li {
   list-style: none;
 }
 
-body header ul li a {
+body ul li a {
   font-family: Fira Sans;
   font-style: normal;
   font-weight: 600;
@@ -137,38 +143,37 @@ body header ul li a {
   text-decoration: none;
 }
 
-body main .sec-1 {
-  height: 612px;
+main .sec-1 {
+  height: 500px;
   background-color: #a9a19e;
   padding: 50px;
 }
 
-body main .sec-1 .content-left-side .left-side-info {
+main .sec-1 .row-1 .content-left-side .left-side-info {
   margin-top: 20px;
   color: #fff;
 }
 
-body main .sec-1 .content-left-side .left-side-info h1 {
+main .sec-1 .row-1 .content-left-side .left-side-info h1 {
   margin: 20px 0 20px 0;
 }
 
-body main .sec-1 .content-left-side .left-side-info a {
+main .sec-1 .row-1 .content-left-side .left-side-info a {
   text-decoration: none;
   margin-top: 20px;
 }
 
-body main .sec-1 .content-right-side {
+main .sec-1 .row-1 .content-right-side {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
-body main .sec-2 {
-  background-color: #fab131;
-  padding: 50px;
+main .sec-1 .row-2 {
+  margin-top: 150px;
 }
 
-body main .sec-2 .cover-profile .profiles {
+main .sec-1 .row-2 .cover-profile .profiles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,8 +185,7 @@ body main .sec-2 .cover-profile .profiles {
       justify-content: space-around;
 }
 
-body main .sec-2 .cover-profile .profiles .card {
-  margin-top: -200px;
+main .sec-1 .row-2 .cover-profile .profiles .card {
   background-color: #fff;
   max-width: 240px;
   padding: 15px;
@@ -191,33 +195,33 @@ body main .sec-2 .cover-profile .profiles .card {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-body main .sec-2 .cover-profile .profiles .card h5 {
+main .sec-1 .row-2 .cover-profile .profiles .card h5 {
   color: rgba(0, 0, 0, 0.9);
   margin-top: 15px;
   margin-bottom: 10px;
 }
 
-body main .sec-2 .cover-profile .profiles .card .profile-info {
+main .sec-1 .row-2 .cover-profile .profiles .card .profile-info {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-body main .sec-2 .cover-profile .profiles .card .profile-info p {
+main .sec-1 .row-2 .cover-profile .profiles .card .profile-info p {
   font-size: 11px;
   font-weight: bold;
   font-style: normal;
   color: rgba(0, 0, 0, 0.4);
 }
 
-body main .sec-2 .cover-profile .profiles .card .profile-img-bc {
+main .sec-1 .row-2 .cover-profile .profiles .card .profile-img-bc {
   height: 170px;
   border-radius: 5px;
   position: relative;
   margin-top: -50px;
 }
 
-body main .sec-2 .cover-profile .profiles .card .profile-img-bc .profile-img {
+main .sec-1 .row-2 .cover-profile .profiles .card .profile-img-bc .profile-img {
   width: 236px;
   height: 150px;
   position: absolute;
@@ -226,63 +230,73 @@ body main .sec-2 .cover-profile .profiles .card .profile-img-bc .profile-img {
   border-radius: 5px;
 }
 
-body main .sec-2 .cover-profile .profiles .profile-1 .profile-img-bc {
+main .sec-1 .row-2 .cover-profile .profiles .profile-1 .profile-img-bc {
   background-color: #c7ddea;
 }
 
-body main .sec-2 .cover-profile .profiles .profile-1 .profile-img-bc .profile-img-1 {
+main .sec-1 .row-2 .cover-profile .profiles .profile-1 .profile-img-bc .profile-img-1 {
   background-image: url(../assets/img/child.png);
   background-size: 100px 170px;
   background-repeat: no-repeat;
   background-position: center top;
 }
 
-body main .sec-2 .cover-profile .profiles .profile-2 .profile-img-bc {
+main .sec-1 .row-2 .cover-profile .profiles .profile-2 .profile-img-bc {
   background-color: #fab131;
 }
 
-body main .sec-2 .cover-profile .profiles .profile-2 .profile-img-bc .profile-img-2 {
+main .sec-1 .row-2 .cover-profile .profiles .profile-2 .profile-img-bc .profile-img-2 {
   background-image: url(../assets/img/adult.png);
   background-size: 82px 470px;
   background-repeat: no-repeat;
   background-position: center top;
 }
 
-body main .sec-2 .cover-profile .profiles .profile-3 .profile-img-bc {
+main .sec-1 .row-2 .cover-profile .profiles .profile-3 .profile-img-bc {
   background-color: #f17949;
 }
 
-body main .sec-2 .cover-profile .profiles .profile-3 .profile-img-bc .profile-img-3 {
+main .sec-1 .row-2 .cover-profile .profiles .profile-3 .profile-img-bc .profile-img-3 {
   background-image: url(../assets/img/old.png);
   background-size: 132px 420px;
   background-repeat: no-repeat;
   background-position: center top;
 }
 
-body main .sec-2 .cover-about-us .about-us {
+main .sec-2 {
+  background-color: #fab131;
+  padding: 50px;
+}
+
+main .sec-2 .cover-about-us {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+main .sec-2 .cover-about-us .about-us {
   width: 55%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-body main .sec-2 .cover-about-us .about-us h1 {
+main .sec-2 .cover-about-us .about-us h1 {
   color: #fff;
   font-style: normal;
   font-weight: 900;
   font-size: 45px;
 }
 
-body main .sec-3 .cover-how-it-works .row {
+main .sec-3 .cover-how-it-works .row {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 333px 333px 333px;
-      grid-template-columns: 333px 333px 333px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
   -ms-grid-rows: (300px)[2];
       grid-template-rows: repeat(2, 300px);
 }
 
-body main .sec-3 .cover-how-it-works .row .box {
+main .sec-3 .cover-how-it-works .row .box {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,11 +309,12 @@ body main .sec-3 .cover-how-it-works .row .box {
           align-items: center;
 }
 
-body main .sec-3 .cover-how-it-works .row .box p {
+main .sec-3 .cover-how-it-works .row .box p {
   text-align: center;
+  font-weight: bold;
 }
 
-body main .sec-3 .cover-how-it-works .row .box h3 {
+main .sec-3 .cover-how-it-works .row .box h3 {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
@@ -310,37 +325,37 @@ body main .sec-3 .cover-how-it-works .row .box h3 {
   color: rgba(0, 0, 0, 0.4);
 }
 
-body main .sec-3 .cover-how-it-works .row .box-1 {
-  background-color: #C7DDEA;
+main .sec-3 .cover-how-it-works .row .box-1 {
+  background-color: #c7ddea;
 }
 
-body main .sec-3 .cover-how-it-works .row .box-1 h2 {
+main .sec-3 .cover-how-it-works .row .box-1 h2 {
   text-align: center;
   font-weight: 900;
   font-size: 45px;
   line-height: 100%;
 }
 
-body main .sec-3 .cover-how-it-works .row .box-3 {
-  background-color: #EBEBEB;
+main .sec-3 .cover-how-it-works .row .box-3 {
+  background-color: #ebebeb;
 }
 
-body main .sec-3 .cover-how-it-works .row .box-5 {
-  background-color: #F17949;
+main .sec-3 .cover-how-it-works .row .box-5 {
+  background-color: #f17949;
 }
 
-body main .sec-3 .take-to-the-top {
+main .sec-3 .take-to-the-top {
   padding: 30px;
-  background-color: #A9A19E;
+  background-color: #a9a19e;
   text-align: center;
 }
 
-body main .sec-3 .take-to-the-top a {
+main .sec-3 .take-to-the-top a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
 }
 
-body footer {
+footer {
   height: 340px;
   background-color: #777574;
 }
