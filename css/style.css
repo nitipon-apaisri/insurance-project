@@ -304,8 +304,8 @@ main .sec-2 .cover-about-us .about-us h1 {
 main .sec-3 .cover-how-it-works .row {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
+  -ms-grid-columns: 333px 333px 333px;
+      grid-template-columns: 333px 333px 333px;
   -ms-grid-rows: (300px)[2];
       grid-template-rows: repeat(2, 300px);
 }

@@ -220,7 +220,7 @@ main {
     .cover-how-it-works {
       .row {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 333px 333px 333px;
         grid-template-rows: repeat(2, 300px);
         .box {
           position: relative;
