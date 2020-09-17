@@ -27,6 +27,13 @@ body {
         }
         p {
           @extend %main-text-prop;
+          margin-bottom: 30px;
+          .highlight {
+            color: #fff;
+          }
+        }
+        a {
+          @extend %button;
         }
         img {
           width: 286px;
@@ -49,11 +56,11 @@ body {
       flex-direction: column;
       align-items: stretch;
       .learn-more {
-        background-color: #f17949;
+        background-color: $mandarin;
         @extend %box-model;
       }
       .join-now {
-        background-color: #fab131;
+        background-color: $clementine;
         @extend %box-model;
       }
     }
@@ -72,6 +79,7 @@ body {
         font-size: 12px;
         line-height: 100%;
         text-decoration: none;
+        color: black;
       }
     }
   }
@@ -89,11 +97,10 @@ main {
           margin-top: 20px;
           color: #fff;
           h1 {
-            margin: 20px 0 20px 0;
+            margin: 20px 0 40px 0;
           }
           a {
-            text-decoration: none;
-            margin-top: 20px;
+            @extend %button;
           }
         }
       }
@@ -162,7 +169,7 @@ main {
           }
           .profile-2 {
             .profile-img-bc {
-              background-color: #fab131;
+              background-color: $clementine;
               .profile-img-2 {
                 background-image: url(../assets/img/adult.png);
                 background-size: 82px 470px;
@@ -173,7 +180,7 @@ main {
           }
           .profile-3 {
             .profile-img-bc {
-              background-color: #f17949;
+              background-color: $mandarin;
               .profile-img-3 {
                 background-image: url(../assets/img/old.png);
                 background-size: 132px 420px;
@@ -187,7 +194,7 @@ main {
     }
   }
   .sec-2 {
-    background-color: #fab131;
+    background-color: $clementine;
     padding: 50px;
     .cover-about-us {
       margin-top: 150px;
@@ -247,7 +254,7 @@ main {
           background-color: #ebebeb;
         }
         .box-5 {
-          background-color: #f17949;
+          background-color: $mandarin;
         }
       }
     }

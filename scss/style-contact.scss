@@ -22,7 +22,7 @@ body {
       }
       .img {
         img {
-          width: 286px;
+          width: 176px;
           height: 279px;
         }
       }
@@ -42,13 +42,14 @@ body {
             font-size: 12px;
             line-height: 100%;
             text-decoration: none;
+            color: black;
           }
         }
       }
     }
   }
   main {
-    .sec-1 {
+    .con-sec-1 {
       background-color: #a9a19e;
       .contact {
         padding: 50px;
@@ -93,7 +94,7 @@ body {
         }
       }
     }
-    .sec-2 {
+    .con-sec-2 {
       article {
         background-image: url(../assets/img/shinjuku.png);
         background-position: center;

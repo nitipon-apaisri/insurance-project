@@ -14,6 +14,16 @@ body header .hero .content-left-side p, main .sec-1 .row-1 .content-right-side, 
   color: rgba(0, 0, 0, 0.4);
 }
 
+body header .hero .content-left-side a, main .sec-1 .row-1 .content-left-side .left-side-info a {
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-decoration: none;
+  color: black;
+}
+
 body header .content-right-side .learn-more, body header .content-right-side .join-now {
   height: 50%;
   display: -webkit-box;
@@ -80,6 +90,14 @@ body header .hero .content-left-side h1 {
   margin: 20px 0 20px 0;
 }
 
+body header .hero .content-left-side p {
+  margin-bottom: 30px;
+}
+
+body header .hero .content-left-side p .highlight {
+  color: #fff;
+}
+
 body header .hero .content-left-side img {
   width: 286px;
   height: 279px;
@@ -141,6 +159,7 @@ body ul li a {
   font-size: 12px;
   line-height: 100%;
   text-decoration: none;
+  color: black;
 }
 
 main .sec-1 {
@@ -155,12 +174,7 @@ main .sec-1 .row-1 .content-left-side .left-side-info {
 }
 
 main .sec-1 .row-1 .content-left-side .left-side-info h1 {
-  margin: 20px 0 20px 0;
-}
-
-main .sec-1 .row-1 .content-left-side .left-side-info a {
-  text-decoration: none;
-  margin-top: 20px;
+  margin: 20px 0 40px 0;
 }
 
 main .sec-1 .row-1 .content-right-side {

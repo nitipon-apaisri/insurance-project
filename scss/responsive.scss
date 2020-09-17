@@ -28,6 +28,12 @@ $breakpoint-mobile: 375px;
           height: 630px;
         }
       }
+      //contact page 
+      .header-content {
+        .img {
+          display: none;
+        }
+      }
     }
     main {
       .sec-1 {
@@ -43,11 +49,15 @@ $breakpoint-mobile: 375px;
               margin: 0;
               h1 {
                 font-size: 45px;
+                margin-bottom: 20px;
               }
             }
           }
           .content-right-side {
             width: 100%;
+            p {
+              margin-top: 20px;
+            }
           }
         }
         .row-2 {
@@ -77,12 +87,19 @@ $breakpoint-mobile: 375px;
             grid-template-columns: auto;
             grid-template-rows: repeat(6, 170px);
             .box {
-                h3 {
-                    margin-left: 10px;
-                    margin-top: 10px;
-                }
+              h3 {
+                margin-left: 10px;
+                margin-top: 10px;
+              }
             }
           }
+        }
+      }
+      //Contact page
+      .con-sec-1 {
+        .contact {
+          padding: 25px;
+          grid-template-columns: auto;
         }
       }
     }

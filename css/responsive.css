@@ -38,6 +38,9 @@
   body header .hero .content-right-side {
     height: 630px;
   }
+  body header .header-content .img {
+    display: none;
+  }
   body main .sec-1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -61,9 +64,13 @@
   }
   body main .sec-1 .row-1 .content-left-side .left-side-info h1 {
     font-size: 45px;
+    margin-bottom: 20px;
   }
   body main .sec-1 .row-1 .content-right-side {
     width: 100%;
+  }
+  body main .sec-1 .row-1 .content-right-side p {
+    margin-top: 20px;
   }
   body main .sec-1 .row-2 {
     margin-top: 0;
@@ -98,6 +105,11 @@
   body main .sec-3 .cover-how-it-works .row .box h3 {
     margin-left: 10px;
     margin-top: 10px;
+  }
+  body main .con-sec-1 .contact {
+    padding: 25px;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
